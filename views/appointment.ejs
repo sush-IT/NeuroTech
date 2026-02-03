@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="/appointment.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <%- include("partials/header") %>
+
+    <main class="container my-5">
+        <div class="appointment-box">
+
+            <h2 class="text-center mb-3">📅 Book an Appointment</h2>
+            <p class="text-center text-muted mb-4">
+                Schedule a confidential session with a licensed professional.
+            </p>
+
+            <form>
+                <!-- Full Name -->
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" placeholder="example@email.com" required>
+                </div>
+
+                <!-- Professional Type -->
+                <div class="mb-3">
+                    <label class="form-label">Select Professional</label>
+                    <select class="form-select" required>
+                        <option selected disabled>Choose</option>
+                        <option>Psychologist</option>
+                        <option>Psychiatrist</option>
+                        <option>Counselor</option>
+                        <option>Therapist</option>
+                    </select>
+                </div>
+
+                <!-- Appointment Date -->
+                <div class="mb-3">
+                    <label class="form-label">Preferred Date</label>
+                    <input type="date" class="form-control" required>
+                </div>
+
+                <!-- Appointment Time -->
+                <div class="mb-3">
+                    <label class="form-label">Preferred Time</label>
+                    <input type="time" class="form-control" required>
+                </div>
+
+                <!-- Mode -->
+                <div class="mb-3">
+                    <label class="form-label">Session Mode</label>
+                    <select class="form-select" required>
+                        <option selected disabled>Choose</option>
+                        <option>Online (Video Call)</option>
+                        <option>In-Person</option>
+                    </select>
+                </div>
+
+                <!-- Notes -->
+                <div class="mb-3">
+                    <label class="form-label">Additional Notes (optional)</label>
+                    <textarea class="form-control" rows="3" placeholder="Any specific concerns or preferences"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success px-4">
+                        Confirm Appointment
+                    </button>
+                </div>
+            </form>
+
+            <!-- Disclaimer -->
+            <div class="alert alert-info mt-4">
+                <strong>Note:</strong>  
+                This appointment request is confidential. A confirmation will be sent via email.
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

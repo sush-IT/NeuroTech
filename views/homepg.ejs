@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neuro-Tech | Mental Health Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/homepg.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <%- include("partials/header") %>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-center">
+            <h1>Your Mental Well-Being Matters</h1>
+            <p>
+                A safe space for support, self-care, and professional guidance.
+            </p>
+            <div class="hero-buttons">
+                <a href="/checkin" class="btn btn-success btn-lg">Start Daily Check-In</a>
+                <a href="/talk" class="btn btn-outline-light btn-lg">Talk Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h5>🧠 Daily Check-In</h5>
+                    <p>Track your mood and mental health with simple daily questions.</p>
+                    <a href="/checkin">Start Check-In →</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h5>💬 Talk Now</h5>
+                    <p>Get immediate emotional support in a safe and calm environment.</p>
+                    <a href="/talk">Open Chat →</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h5>📅 Book Appointment</h5>
+                    <p>Schedule a confidential session with licensed professionals.</p>
+                    <a href="/appointment">Book Now →</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h5>🌱 Self-Help Resources</h5>
+                    <p>Explore guides and tools to manage stress and anxiety.</p>
+                    <a href="/resource">Browse →</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h5>🤝 Peer Support Forum</h5>
+                    <p>Connect with others and share experiences in a safe community.</p>
+                    <a href="/forum">Enter Forum →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="col-12 text-center">
+        <a href="/main" class="btn btn-primary">Sign in</a>
+    </div>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section text-center">
+        <h2>You Are Not Alone</h2>
+        <p>
+            Taking care of your mental health is a sign of strength.
+        </p>
+        <a href="/talk" class="btn btn-primary btn-lg">Get Support Now</a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

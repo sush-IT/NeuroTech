@@ -1,0 +1,11 @@
+/* About Page Box */
+.about-box {
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+

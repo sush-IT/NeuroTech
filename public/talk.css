@@ -1,0 +1,50 @@
+
+/* Talk Now Box */
+.talk-box {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* Chat Area */
+.chat-area {
+    background: #f1f5f9;
+    border-radius: 10px;
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+/* Chat Messages */
+.chat-message {
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    max-width: 80%;
+    font-size: 0.95rem;
+}
+
+/* Bot Message */
+.chat-message.bot {
+    background: #e0f2f1;
+    color: #065f46;
+}
+
+/* User Message (for future use) */
+.chat-message.user {
+    background: #dbeafe;
+    color: #1e3a8a;
+    margin-left: auto;
+}
+
+/* Chat Form */
+.chat-form input {
+    border-radius: 8px 0 0 8px;
+}
+
+.chat-form button {
+    border-radius: 0 8px 8px 0;
+}

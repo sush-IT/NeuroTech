@@ -1,0 +1,21 @@
+/* Forum Box */
+.forum-box {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* Individual Forum Posts */
+.forum-post {
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.forum-post h6 {
+    color: #0f766e;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Check-In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="/checkin.css">
+</head>
+<body>
+    <a href="/checkin"></a>
+    <!-- Header (if you are using partials) -->
+    <%- include("partials/header") %>
+
+    <main class="container my-5">
+        <div class="checkin-box">
+
+            <h2 class="text-center mb-4">🧠 Daily Mental Health Check-In</h2>
+
+            <form>
+                <!-- Mood -->
+                <div class="mb-3">
+                    <label class="form-label">How are you feeling today?</label>
+                    <select class="form-select">
+                        <option selected>Select mood</option>
+                        <option>😊 Happy</option>
+                        <option>😐 Okay</option>
+                        <option>😔 Sad</option>
+                        <option>😟 Anxious</option>
+                        <option>😣 Stressed</option>
+                    </select>
+                </div>
+
+                <!-- Stress level -->
+                <div class="mb-3">
+                    <label class="form-label">Stress level (1–10)</label>
+                    <input type="range" class="form-range" min="1" max="10">
+                </div>
+
+                <!-- Sleep -->
+                <div class="mb-3">
+                    <label class="form-label">How was your sleep?</label>
+                    <select class="form-select">
+                        <option selected>Select</option>
+                        <option>Very good</option>
+                        <option>Good</option>
+                        <option>Average</option>
+                        <option>Poor</option>
+                    </select>
+                </div>
+
+                <!-- Notes -->
+                <div class="mb-3">
+                    <label class="form-label">Anything you want to share?</label>
+                    <textarea class="form-control" rows="3" placeholder="Write here..."></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div class="text-center">
+                    <button href="/submit" type="submit" class="btn btn-success px-4">
+                        Submit Check-In
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

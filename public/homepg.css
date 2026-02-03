@@ -1,0 +1,69 @@
+/* HERO SECTION */
+.hero-section {
+    position: relative;
+    height: 90vh;
+    background-image: url("/bg.jpg"); /* your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.hero-buttons a {
+    margin: 8px;
+}
+
+/* FEATURE CARDS */
+.feature-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+}
+
+.feature-card h5 {
+    color: #0f766e;
+    margin-bottom: 10px;
+}
+
+.feature-card a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #0d6efd;
+}
+
+/* CTA SECTION */
+.cta-section {
+    background: linear-gradient(135deg, #0f766e, #22c55e);
+    color: white;
+    padding: 60px 20px;
+}
